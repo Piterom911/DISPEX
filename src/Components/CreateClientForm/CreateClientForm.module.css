@@ -1,0 +1,15 @@
+.infoWrapper {
+    margin-bottom: 30px;
+}
+
+.info span {
+    font-size: 14px;
+    display: inline-block;
+    font-weight: 700;
+    width: 60px;
+}
+
+.info {
+    margin: 0;
+    font-size: 12px;
+}
