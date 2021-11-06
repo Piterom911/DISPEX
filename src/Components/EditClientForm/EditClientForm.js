@@ -1,7 +1,6 @@
 import React from "react";
 import {Button, Form, Input} from "antd";
 import {createClient} from "../../redux/clientReducer/clientReducer";
-import {getClientsInApartment} from "../../redux/clientsReducer/clientsReducer";
 import {useDispatch} from "react-redux";
 
 const layout = {
@@ -21,7 +20,6 @@ export const EditClientForm = (props) => {
     const onFinish = (values) => {
         const {name, number, email} = values.user
         dispatch(createClient(props.id, name, number, email, props.bindId))
-        dispatch(getClientsInApartment(props.bindId))
     };
 
     return (
