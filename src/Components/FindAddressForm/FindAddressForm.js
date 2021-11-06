@@ -7,7 +7,7 @@ import {getApartments, getHouses} from "../../redux/addressReducer/addressReduce
 import {getClientsInApartment} from "../../redux/clientsReducer/clientsReducer";
 import {setApartmentID} from "../../redux/clientReducer/clientReducer";
 
-const { Option } = Select
+const {Option} = Select
 
 export const FindAddressForm = () => {
     const dispatch = useDispatch()
@@ -17,10 +17,7 @@ export const FindAddressForm = () => {
     const streets = useSelector(state => state.address.streets)
     const houses = useSelector(state => state.address.houses)
     const apartments = useSelector(state => state.address.apartments)
-    // const chosenStreet = useSelector(state => state.address.chosenStreet)
-    // const chosenHouse = useSelector(state => state.address.chosenHouse)
-    // const chosenApartment = useSelector(state => state.address.chosenApartment)
-    const clients = useSelector(state => state.clients)
+    const clients = useSelector(state => state.clients.clients)
 
     const optionsStreets = streets.map(str => <Option key={str.id} value={str.id}>{str.name}</Option>)
     const optionsHouses = houses.map(hs => <Option key={hs.id} value={hs.id}>{hs.name}</Option>)
@@ -49,19 +46,31 @@ export const FindAddressForm = () => {
             <Select loading={selectorsStatus}
                     placeholder="Улица"
                     onChange={onStreetSelected}
-                    style={{ width: 200 }}>
+                    showSearch
+                    filterOption={(input, option) =>
+                        option.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
+                    }
+                    style={{width: 200}}>
                 {optionsStreets}
             </Select>
             <Select loading={selectorsStatus}
                     placeholder="Дом"
                     onChange={onHouseSelected}
-                    style={{ width: 200 }}>
+                    showSearch
+                    filterOption={(input, option) =>
+                        option.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
+                    }
+                    style={{width: 200}}>
                 {optionsHouses}
             </Select>
             <Select loading={selectorsStatus}
                     placeholder="Квартира"
                     onChange={onApartmentSelected}
-                    style={{ width: 200 }}>
+                    showSearch
+                    filterOption={(input, option) =>
+                        option.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
+                    }
+                    style={{width: 200}}>
                 {optionsApartments}
             </Select>
         </div>

@@ -24,8 +24,11 @@ export const clientApi = {
     getClient(phone) {
         return instance.get(`/HousingStock/client?phone=${phone}`)
     },
-    bindClient(AddressId, ClientId) {
-        return instance.put(`/HousingStock/bind_client`, {AddressId, ClientId})
+    bindClient(addressId, clientId) {
+        return instance.put(`/HousingStock/bind_client`, {addressId, clientId})
+    },
+    removeClient(clientId) {
+        return instance.delete(`/HousingStock/bind_client/${clientId}`)
     },
 }
 

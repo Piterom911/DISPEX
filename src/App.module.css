@@ -27,16 +27,17 @@
     z-index: 1099;
 }
 
-.top {
-    padding: 25px 50px 50px;
-    border: 1px solid #e3e3e3;
-    border-radius: 5px;
-    box-shadow: 0 10px 10px 10px rgba(0, 0, 0, .02);
-}
-
 .cardHeading {
     color: white;
     margin-bottom: 30px;
     text-align: center;
     font-size: 25px;
+}
+
+.tip {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: -20px;
+    color: white;
 }

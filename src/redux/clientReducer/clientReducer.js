@@ -1,5 +1,4 @@
 import {clientApi} from "../../api/commonApi";
-import {getClientsInApartment} from "../clientsReducer/clientsReducer";
 import {setErrorMessage, setSuccessMessage} from "../appReducer/appReducer";
 
 const clientInitialState = {
@@ -36,9 +35,6 @@ export const createClient = (Id, Name, Phone, Email, BindId) => async dispatch =
         const response = await clientApi.createClient({Id, Name, Phone, Email, BindId})
         dispatch(setClient(response.data))
         dispatch(setSuccessMessage(response.data.result))
-        // const bindResponse = await clientApi.bindClient(BindId, response.data.id)
-        // console.log(response)
-        // dispatch(getClientsInApartment(BindId))
     } catch (error) {
         dispatch(setErrorMessage(error.message))
     }

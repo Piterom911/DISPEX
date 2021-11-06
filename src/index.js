@@ -8,9 +8,9 @@ import store from "./redux/store";
 
 ReactDOM.render(
     <Provider store={store}>
-        <App />
+        <App/>
     </Provider>,
-  document.getElementById('root')
+    document.getElementById('root')
 );
 
 reportWebVitals();

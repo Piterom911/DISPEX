@@ -1,0 +1,48 @@
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.text {
+    text-align: center;
+    width: 100%;
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+}
+
+.item {
+    background-color: white;
+    width: calc(50% - 15px);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 30px 20px 10px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.item p {
+    font-size: 12px;
+}
+
+.icons {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    top: -15px;
+    background-color: white;
+    right: 10px;
+    box-shadow: 1px 3px 5px 5px rgba(0, 0, 0, .05);
+}
+
+.change {
+    right: 60px;
+}
