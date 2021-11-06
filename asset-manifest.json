@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/DISPEX/static/css/main.c51dab06.chunk.css",
+    "main.js": "/DISPEX/static/js/main.311414ae.chunk.js",
+    "main.js.map": "/DISPEX/static/js/main.311414ae.chunk.js.map",
+    "runtime-main.js": "/DISPEX/static/js/runtime-main.cdac0628.js",
+    "runtime-main.js.map": "/DISPEX/static/js/runtime-main.cdac0628.js.map",
+    "static/css/2.a95be28f.chunk.css": "/DISPEX/static/css/2.a95be28f.chunk.css",
+    "static/js/2.96000e7a.chunk.js": "/DISPEX/static/js/2.96000e7a.chunk.js",
+    "static/js/2.96000e7a.chunk.js.map": "/DISPEX/static/js/2.96000e7a.chunk.js.map",
+    "static/js/3.f2451eb5.chunk.js": "/DISPEX/static/js/3.f2451eb5.chunk.js",
+    "static/js/3.f2451eb5.chunk.js.map": "/DISPEX/static/js/3.f2451eb5.chunk.js.map",
+    "index.html": "/DISPEX/index.html",
+    "static/css/2.a95be28f.chunk.css.map": "/DISPEX/static/css/2.a95be28f.chunk.css.map",
+    "static/css/main.c51dab06.chunk.css.map": "/DISPEX/static/css/main.c51dab06.chunk.css.map",
+    "static/js/2.96000e7a.chunk.js.LICENSE.txt": "/DISPEX/static/js/2.96000e7a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cdac0628.js",
+    "static/css/2.a95be28f.chunk.css",
+    "static/js/2.96000e7a.chunk.js",
+    "static/css/main.c51dab06.chunk.css",
+    "static/js/main.311414ae.chunk.js"
+  ]
+}
